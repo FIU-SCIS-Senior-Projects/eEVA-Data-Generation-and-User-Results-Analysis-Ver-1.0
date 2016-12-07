@@ -1,0 +1,123 @@
+
+<div class="flex-container">
+
+	<header>
+		<h1>Severity of Alcohol Dependence Questionnaire (SADQ-C) Feedback Summary</h1>
+	</header>
+
+	<nav class="nav dependence">
+	</nav>
+
+	<article class="article">
+	  <table id="test">
+  	<tr>
+  		<th colspan="3"><h2>Dependence</h2></th>
+  	</tr>
+
+    <tr>  
+		<td><h3>Total Score:</h3></td>
+		<td class="one"><h3>10</h3></td>
+
+		<td class="two"><h3><b>low</b></h3></td>
+	</tr>
+  
+    <tr>  
+		<td><h3>Impaired control over drinking:</h3></td>
+		<td class="one"><h3>6</h3></td>
+
+		<td class="three"><h3><b>medium</b></h3></td>
+	</tr>
+		</table><br><p align="left">
+		Alcohol abuse means having unhealthy or dangerous drinking habits, such as drinking every day or drinking too much at a time. When you abuse alcohol, you continue to drink even though you know your drinking is causing problems. If you continue to abuse alcohol, it can lead to <strong>alcohol dependence</strong>. Alcohol dependence means that you are physically or mentally addicted to alcohol. You have a strong need, or craving, to drink. You feel like you must drink just to get by. 
+	<br>
+	<br>
+	 The Severity of Alcohol Dependence Questionnaire (SADQ-C) was developed by the Addiction Research Unit at the Maudsley Hospital. It is a measure of the severity of dependence. A score of 31 or higher indicates "severe alcohol dependence." A score of 16 to 30 indicates "moderate dependence" A score of below 16 usually indicates only a mild physical dependency. To see what your alcohol dependence is, take a look at your scores above.</p> 
+
+	</article>
+</div>
+
+<style>
+
+table {
+  width: 100%;
+  height: 150px;
+ 
+}
+
+td{
+  width: 50px;
+}
+th{
+  background-color: #454545;
+  color:white;
+  text-align: center;
+}
+
+table, td, th {
+    border: 3px solid black;
+    border-collapse: collapse;
+ 
+}
+
+textarea {
+	   font-size: 14pt;
+	   font-family: Palatino Linotype;
+} 
+
+.two{
+	color: green;
+}
+
+.three{
+	color: orange;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	text-align: center;
+
+}  
+
+.flex-container > * {
+		padding: 25px;
+	-webkit-flex: 1 100%;
+	flex: 1 100%;
+	width: 720px;
+	
+} 
+
+.article {     
+	border: 3px solid #D3D3D3;
+	height: 650px;
+}   
+
+header {background: black;color:white;} 
+footer {background: #aaa;color:white;} 
+
+.nav {background:#eee;}
+
+.nav ul {
+	list-style-type: none;
+    padding: 0;
+
+}     
+
+.nav ul a {
+	text-decoration: none;
+}  
+
+.dependence {
+ 	padding-top: 450px;
+ 	 height: 650px;
+   text-align: left;
+	}  
+
+@media all and (min-width: 768px) {
+	.nav {-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}     
+	.article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}     
+	footer {-webkit-order:3;order:3;} 
+}    
+</style>

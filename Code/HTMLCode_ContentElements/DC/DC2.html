@@ -1,0 +1,135 @@
+
+<div class="flex-container">
+
+	<header>
+		<h1>Brief Drinker Profile (BDP) Feedback Summary</h1>
+	</header>
+
+	<nav class="nav future">
+	
+	</nav>
+
+	<article class="article">
+	  <table id="test">
+  	<tr>
+  		<th colspan="3"><h2>Risk for Future Alcohol-Related Problems Based on Your</h2></th>
+  	</tr>
+
+    <tr>  
+		<td><h3>Age of onset of drinking or alcohol problems:</h3></td>
+		<td class="high"><h3>High Risk</h3></td>
+	</tr>
+  
+    <tr>  
+		<td><h3>Family History:</h3></td>
+		<td class="medium"><h3>Medium Risk</h3></td>
+	</tr>
+
+	<tr>  
+		<td><h3>Other drug use (history or current use):</h3></td>
+		<td class="high"><h3>High Risk</h3></td>
+	</tr>
+
+    <tr>  
+		<td><h3>Score on the screening questionnaire:</h3></td>
+		<td class="high"><h3>40 Very High</h3></td>
+	</tr>
+
+    <tr>  
+		<td><h3>Tolerance:</h3></td>
+		<td class="high"><h3>High</h3></td>
+	</tr>
+	</table>
+	<br><p align="left">
+	Alcoholism has one of the highest risks for future related disease and death in the United States.  It increases your risk of developing long-term conditions such as diabetes, obesity, liver disease, heart disease, and even cancer.  When one consumes alcohol in moderation, the risk is small for these long-term effects.  If someone becomes dependent on alcohol, they run the risk of the body depending on alcohol to function.  Once you are chemically reliant upon it, you run the risks of these life-threatening side effects.
+	<br>
+	<br>
+	Factors such as those provided in the chart may lead to alcohol abuse, and future health issues. </p> 
+	</article>
+</div>
+
+<style>
+
+table {
+  width: 100%;
+  height: 150px;
+ 
+}
+
+td{
+  width: 50px;
+}
+th{
+  background-color: #454545;
+  color:white;
+  text-align: center;
+}
+
+table, td, th {
+    border: 3px solid black;
+    border-collapse: collapse;
+ 
+}
+
+textarea {
+	   font-size: 14pt;
+	   font-family: Palatino Linotype;
+} 
+
+.high{
+	color: red;
+}
+
+.medium{
+	color: brown;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	text-align: center;
+
+}  
+
+.flex-container > * {
+		padding: 25px;
+	-webkit-flex: 1 100%;
+	flex: 1 100%;
+	width: 720px;
+	
+} 
+
+.article {     
+	border: 3px solid #D3D3D3;
+	height: 650px;
+}   
+
+header {background: black;color:white;} 
+footer {background: #aaa;color:white;} 
+
+.nav {background:#eee;}
+
+.nav ul {
+	list-style-type: none;
+    padding: 0;
+
+}     
+
+.nav ul a {
+	text-decoration: none;
+}  
+
+.future {
+ 	padding-top: 450px;
+ 	 height: 650px;
+   text-align: left;
+	}  
+
+@media all and (min-width: 768px) {
+	.nav {-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}     
+	.article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}     
+	footer {-webkit-order:3;order:3;} 
+}    
+</style>

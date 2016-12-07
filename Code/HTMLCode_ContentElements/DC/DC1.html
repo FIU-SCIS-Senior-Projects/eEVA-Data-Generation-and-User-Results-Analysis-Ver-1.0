@@ -1,0 +1,77 @@
+<div class="flex-container">
+
+	<header>
+		<h1>Quality of Drinking</h1>
+	</header>
+
+	<nav class="nav drinkingPattern">
+	</nav>
+
+	<article class="article">
+		<table id="dc1">
+		<tr>	
+		<td><img src="https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/blogs/wonkblog/files/2014/09/drinking.png&w=1484" style="width: auto; height: auto;max-width: 620px;max-height: 618px"> </td>
+
+		<td class="c2">
+		<h4>
+			You described your drinking pattern as: moderate<br><br><br><br>
+			The total number of standard drinks you had per week in the last 4 weeks was: 17<br><br><br><br>
+			Your drinking relative to the other US XXX (MALES/FEMALES) is (percentile): 83
+		</h4></td>
+		</tr>
+		</table>
+	</article>
+</div>
+
+<style>
+textarea {
+	   font-size: 14pt;
+	   font-family: Palatino Linotype;
+} 
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	text-align: center;
+}  
+
+.flex-container > * {
+	padding: 25px;
+	-webkit-flex: 1 100%;
+	flex: 1 100%;
+	width: 720px;
+} 
+
+.article {     
+	text-align: center;
+	border: 3px solid #D3D3D3;
+	height: 650px;
+}   
+
+header {background: black;color:white;} 
+footer {background: #aaa;color:white;} 
+
+.nav {background:#eee;}
+
+.nav ul {
+	list-style-type: none;
+    padding: 0;
+}     
+
+.nav ul a {
+	text-decoration: none;
+}  
+
+.drinkingPattern {
+ 	padding-top: 450px;
+ 	height: 650px;
+	}  
+
+@media all and (min-width: 768px) {
+	.nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}     
+	.article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}     
+	footer {-webkit-order:3;order:3;} 
+}    
+</style>

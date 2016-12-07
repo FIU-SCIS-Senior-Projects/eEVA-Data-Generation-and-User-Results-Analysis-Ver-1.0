@@ -1,0 +1,125 @@
+
+<div class="flex-container">
+
+	<header>
+		<h1>Drinker Inventory of Consequences (DrInC) Feedback Summary</h1>
+	</header>
+
+	<nav class="nav consequences">
+		 
+	</nav>
+
+	<article class="article">
+	  <table id="test">
+	  <th class="tableheader" colspan="3"><h3>
+    Alcohol-Related Consequences</h3></th>	
+	  <tr>
+    <th><h3>Assessment</h3></th>
+	  <th class="1"><h3>Recent</h3></th>
+    <th class="2"><h3>Lifetime</h3></th>
+    </tr>
+  
+    <tr>  
+		<td><h3>Total Score:</h3></td>
+		<td class="1"><ng-gauge size="90" type="arch" thick="10" value="38.2" cap="round" label="low" foreground-color="#660000" background-color="rgba(255,255,255, 0.4)"></ng-gauge></td>
+
+		<td class="2"><ng-gauge size="90" type="arch" thick="10" value="18.2" cap="round" label="very low" foreground-color="#660000" background-color="rgba(255,255,255, 0.4)"></ng-gauge></td>
+	</tr>
+  
+    <tr>  
+		<td><h3>Interpersonal:</h3></td>
+		<td class="1"><ng-gauge size="90" type="arch" thick="10" value="38.2" cap="round" label="low" foreground-color="#660000" background-color="rgba(255,255,255, 0.4)"></ng-gauge></td>
+
+		<td class="2"><ng-gauge size="90" type="arch" thick="10" value="18.2" cap="round" label="very low" foreground-color="#660000" background-color="rgba(255,255,255, 0.4)"></ng-gauge></td>
+	</tr>
+  
+    <tr>  
+		<td><h3>Intrapersonal:</h3></td>
+		<td class="1"><ng-gauge size="90" type="arch" thick="10" value="38.2" cap="round" label="low" foreground-color="#660000" background-color="rgba(255,255,255, 0.4)"></ng-gauge></td>
+
+		<td class="2"><ng-gauge size="90" type="arch" thick="10" value="88.2" cap="round" label="very high" foreground-color="#660000" background-color="rgba(255,255,255, 0.4)"></ng-gauge></td>
+	</tr>
+  </table><br><p align="left">
+  The Drinker Inventory of Consequences is a self-report assessment of drinking related consequences. The Lifetime Consequences <strong>Total Score</strong> reflects the overall number of alcohol problems that have occurred during your lifetime. <strong>Interpersonal</strong>  consequences focuses on the impact of drinking on your relationships. Adverse consequences here include damage to or the loss of a friendship or love relationship, impairment of parenting and harm to family, concern about drinking from family or friends, damage to reputation, and cruel or embarrassing actions while drinking. <strong>Intrapersonal</strong>  factors of alcohol consumption can be considered as one's own perception of drinking. These subjective perceptions that may not be readily observable by others. These include feeling bad, unhappy or guilty because of drinking; experiencing a personality change for the worse; and interference with personal growth, spiritual/moral life, interests and activities, and having the kind of life one wants. Take a look at your own scores for these items above.</p> 
+	</article>
+</div>
+
+<style>
+
+table {
+  width: 100%;
+  height: 150px;
+}
+
+th {
+  background-color: #999999;
+  color:white;
+  text-align: center;
+}
+
+table, td, th {
+    border: 3px solid black;
+    border-collapse: collapse;
+ 
+}
+
+textarea {
+	   font-size: 14pt;
+	   font-family: Palatino Linotype;
+} 
+
+.tableheader{
+    width: 100%;
+  height: 30px;
+background-color: #454545;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	text-align: center;
+
+}  
+
+.flex-container > * {
+		padding: 25px;
+	-webkit-flex: 1 100%;
+	flex: 1 100%;
+	width: 720px;
+	
+} 
+
+.article {     
+	border: 3px solid #D3D3D3;
+	height: 650px;
+}   
+
+header {background: black;color:white;} 
+footer {background: #aaa;color:white;} 
+
+.nav {background:#eee;}
+
+.nav ul {
+	list-style-type: none;
+    padding: 0;
+
+}     
+
+.nav ul a {
+	text-decoration: none;
+}  
+
+.consequences {
+ 	padding-top: 450px;
+ 	 height: 650px;
+   text-align: left;
+	}  
+
+@media all and (min-width: 768px) {
+	.nav {-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}     
+	.article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}     
+	footer {-webkit-order:3;order:3;} 
+}    
+</style>
